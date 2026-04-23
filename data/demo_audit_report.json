@@ -1,0 +1,110 @@
+{
+  "report_metadata": {
+    "segment_id": "SEG_001",
+    "generated_at": "2026-04-23T14:17:30.081424",
+    "model_version": "GBM_v1.0 + QuantizedEdge_v1.0",
+    "explanation_method": "TreeExplainer (GBM feature importance) + Partial Dependence"
+  },
+  "prediction": {
+    "reflectivity_score": 0.32,
+    "status": "WARNING",
+    "summary": "Reflectivity score is 0.320 (WARNING). Main degradation drivers: bright_ratio (0.15) is low \u2014 Fraction of high-reflectance pixels (>75% brightness)."
+  },
+  "key_drivers": {
+    "degradation_factors": [
+      "bright_ratio (0.15) is low \u2014 Fraction of high-reflectance pixels (>75% brightness)"
+    ],
+    "positive_factors": []
+  },
+  "top_5_features": [
+    {
+      "feature": "spectral_mean",
+      "importance": 0.989,
+      "category": "Spectral",
+      "description": "Mean reflectance across all 31 spectral bands"
+    },
+    {
+      "feature": "mean_brightness",
+      "importance": 0.0028,
+      "category": "Camera",
+      "description": "Average pixel brightness across the road surface"
+    },
+    {
+      "feature": "dirt_level",
+      "importance": 0.0023,
+      "category": "Environmental",
+      "description": "Contamination level (dust, mud, oil)"
+    },
+    {
+      "feature": "wear_level",
+      "importance": 0.0023,
+      "category": "Environmental",
+      "description": "Physical wear from traffic (microsphere loss)"
+    },
+    {
+      "feature": "bright_ratio",
+      "importance": 0.0018,
+      "category": "Camera",
+      "description": "Fraction of high-reflectance pixels (>75% brightness)"
+    }
+  ],
+  "recommendations": [
+    "Surface has high age factor \u2014 consider resurfacing",
+    "Road marking brightness very low \u2014 repainting needed"
+  ],
+  "maintenance_simulation": {
+    "cleaning": {
+      "action": "cleaning",
+      "score_before": 0.3119,
+      "score_after": 0.3175,
+      "improvement": 0.0056,
+      "status_before": "WARNING",
+      "status_after": "WARNING"
+    },
+    "repainting": {
+      "action": "repainting",
+      "score_before": 0.3119,
+      "score_after": 0.8647,
+      "improvement": 0.5528,
+      "status_before": "WARNING",
+      "status_after": "GOOD"
+    },
+    "microsurfacing": {
+      "action": "microsurfacing",
+      "score_before": 0.3119,
+      "score_after": 0.3138,
+      "improvement": 0.0019,
+      "status_before": "WARNING",
+      "status_after": "WARNING"
+    },
+    "resurfacing": {
+      "action": "resurfacing",
+      "score_before": 0.3119,
+      "score_after": 0.8883,
+      "improvement": 0.5764,
+      "status_before": "WARNING",
+      "status_after": "GOOD"
+    }
+  },
+  "counterfactual": {
+    "current_score": 0.3119,
+    "target_score": 0.7,
+    "recommendation": "repainting",
+    "predicted_after": 0.8647,
+    "changes_needed": [
+      {
+        "action": "repainting",
+        "score_after": 0.8647,
+        "sufficient": true
+      }
+    ],
+    "message": "'repainting' is sufficient to reach target score 0.70"
+  },
+  "weather_sensitivity": {
+    "clear": 0.2009,
+    "haze": 0.1612,
+    "rain": 0.1746,
+    "heavy_rain": 0.1479,
+    "fog": 0.1224
+  }
+}

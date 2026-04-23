@@ -1,0 +1,19 @@
+segment_id,highway,score,status,action,trend,last_km,lat,lon
+SEG_002,NH-48 (Delhi–Mumbai),0.088,CRITICAL,IMMEDIATE maintenance required,degrading,74–144,28.0563,76.997
+SEG_016,NH-48 (Delhi–Mumbai),0.125,CRITICAL,IMMEDIATE maintenance required,degrading,1105–1175,21.042,73.7741
+SEG_003,NH-48 (Delhi–Mumbai),0.169,CRITICAL,IMMEDIATE maintenance required,degrading,147–217,27.6889,76.7914
+SEG_018,NH-48 (Delhi–Mumbai),0.184,CRITICAL,IMMEDIATE maintenance required,degrading,1253–1323,20.1206,73.4014
+SEG_010,NH-48 (Delhi–Mumbai),0.215,CRITICAL,IMMEDIATE maintenance required,degrading,663–733,24.1064,75.0593
+SEG_019,NH-48 (Delhi–Mumbai),0.224,CRITICAL,IMMEDIATE maintenance required,degrading,1326–1396,19.5261,73.1019
+SEG_006,NH-48 (Delhi–Mumbai),0.261,CRITICAL,IMMEDIATE maintenance required,degrading,368–438,26.0725,76.0991
+SEG_015,NH-48 (Delhi–Mumbai),0.313,WARNING,Prioritize maintenance within 14 days,degrading,1032–1102,21.6151,74.0619
+SEG_014,NH-48 (Delhi–Mumbai),0.32,WARNING,Prioritize maintenance within 14 days,degrading,958–1028,22.1042,74.2262
+SEG_004,NH-48 (Delhi–Mumbai),0.336,WARNING,Prioritize maintenance within 14 days,degrading,221–291,27.0847,76.5018
+SEG_011,NH-48 (Delhi–Mumbai),0.348,WARNING,Prioritize maintenance within 14 days,degrading,737–807,23.6049,74.9735
+SEG_009,NH-48 (Delhi–Mumbai),0.363,WARNING,Prioritize maintenance within 14 days,degrading,590–660,24.6545,75.404
+SEG_005,NH-48 (Delhi–Mumbai),0.38,WARNING,Prioritize maintenance within 14 days,degrading,295–365,26.6467,76.221
+SEG_008,NH-48 (Delhi–Mumbai),0.384,WARNING,Prioritize maintenance within 14 days,degrading,516–586,25.0699,75.6606
+SEG_017,NH-48 (Delhi–Mumbai),0.422,WARNING,Prioritize maintenance within 14 days,degrading,1179–1249,20.5066,73.6166
+SEG_007,NH-48 (Delhi–Mumbai),0.463,WARNING,Prioritize maintenance within 14 days,degrading,442–512,25.5747,75.8468
+SEG_013,NH-48 (Delhi–Mumbai),0.472,WARNING,Prioritize maintenance within 14 days,degrading,884–954,22.5226,74.4294
+SEG_001,NH-48 (Delhi–Mumbai),0.49,WARNING,Prioritize maintenance within 14 days,degrading,0–70,28.6387,77.2021
